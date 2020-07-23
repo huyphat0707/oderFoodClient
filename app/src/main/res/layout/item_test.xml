@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/item"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10px"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginLeft="30px"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Tên Sản Phẩm"
+                android:textColor="@color/colorwhite"
+                android:textSize="50px"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvTenProduct"
+                android:layout_width="match_parent"
+                android:text="Ten san pham"
+                android:textColor="#FF0000"
+                android:textSize="50px"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Gía Sản Phẩm"
+                android:textColor="@color/colorwhite"
+                android:textSize="50px"
+                android:layout_height="wrap_content"/>
+            <TextView
+            android:id="@+id/tvGiaProduct"
+            android:layout_width="match_parent"
+            android:text="Gia san pham"
+                android:textColor="#FF0000"
+                android:textSize="50px"
+
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
